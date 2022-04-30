@@ -1,0 +1,92 @@
+header{
+height: 7vh;
+padding-top: 10rem;
+
+}
+.header__container{
+text-align: center;
+height: 100%;
+position: static;
+}
+
+.cta{
+margin-top: 2.1rem;
+display:flex ;
+gap: 1.2rem;
+justify-content: center;
+}
+
+/* ===================== SOCIAL=========================*/
+
+.header__socials{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.8rem;
+position: absolute;
+left: 0%;
+bottom: 3rem;
+margin-left: 10px;
+
+}
+.header__socials::after{
+content:"" ;
+width: 1px;
+height: 2rem;
+background-color: var(--color-primary);
+}
+.me{
+background:linear-gradient(var(--color-primary), transparent);
+width: 22rem;
+height: 25rem;
+border-radius: 12rem 12rem 0 0;
+position: absolute;
+left: calc(50% - 11rem);
+margin-top: 20px;
+padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/*  khodam ino zadam braie behtarshodane */
+
+.Test{
+margin-bottom: 10px;
+}
+/* ===================== scroll down=========================*/
+
+.scroll__down{
+position: absolute;
+right: -30rem;
+bottom: 10rem;
+transform: rotate(90deg);
+font-weight: 300;
+font-size: 0.9rem;
+display: flex;
+}
+
+/* =====================  MEDIA QUERIES (MEDIUM DEVICES)  =========================*/
+@media screen and (max-width: 1024px){
+header{
+height: 68vh;
+
+}
+
+}
+/* =====================  MEDIA QUERISE (SMALL DEVICES)  =========================*/
+
+@media screen and (max-width: 600px) {
+.header__socials,
+.scroll__down{
+display: none;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
